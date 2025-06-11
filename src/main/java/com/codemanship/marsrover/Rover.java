@@ -2,7 +2,7 @@ package com.codemanship.marsrover;
 
 public class Rover {
     private final int y;
-    private final String direction;
+    private String direction;
     private final int x;
 
     public Rover(int x, int y, String direction) {
@@ -21,6 +21,14 @@ public class Rover {
 
     public String getDirection()
     {
+        return direction;
+    }
+
+    public String turnRight()
+    {
+        if(direction.equals("N")){
+            direction = "E";
+        }
         return direction;
     }
 }

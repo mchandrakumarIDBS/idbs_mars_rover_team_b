@@ -18,4 +18,10 @@ public class RoverTest {
         Rover rover = new Rover(5, 6, "N");
         assertEquals("N",rover.getDirection());
     }
+
+    @Test
+    void moveRoverRight(){
+        Rover rover = new Rover(5,6, "N");
+        assertEquals("E", rover.turnRight());
+    }
 }
