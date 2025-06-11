@@ -7,6 +7,7 @@ import java.awt.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RoverTest {
+
     @Test
     void testRoverCanBeDropped(){
         Rover rover = new Rover(5);
